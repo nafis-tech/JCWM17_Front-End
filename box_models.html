@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box models</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box; /* sesuai height ma width, tidak akan melebar*/
+    }
+    body {
+        margin: 0px;
+        /*background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); /*https://cssgradient.io*/
+       
+    }
+    .luar {
+        height: 200px;
+        width: 200px;
+        border: 5px solid salmon;
+        background-color: skyblue;
+        padding: 50px; /* klo 1 = sama rata, 50px 20px => atas,bawah (50) & kiri, kanan (20), 4 => kayak jarum jam*/
+        margin: 50px;
+    }
+    .dalam {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(250, 148, 136);
+    }
+</style>
+<body>
+    <!--
+        conten : isi dari sebuah element
+        padding : jarak border ke konten (kedalam)
+        border : garis pembungkus element
+        margin : jarak border ke keluar elemen (keluar)
+
+        pakai satuan yg relative => %
+        border, padding => akan menambah ukuran, 
+        * => select semua yg ada di dalam  body
+        box-sizing, tidak akan menambah lebar element, yg menyesuaikan kontent
+        => yang berubah, areanya, font masih tetap
+    -->
+
+    <div class="luar">
+        <div class="dalam">ini konten</div>
+    </div>
+</body>
+</html>
