@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    /* Internal CSS atau element selector
+    . elemen selector 001
+    . elemen class 0 10
+    . elemen id 100
+
+    klo bertabrakan class vs id, maka menangan id. karena bobotnya lbih berat
+    
+    */
+    div, h3 {
+        color: beige;
+        background-color: salmon;
+    } 
+    h3:hover {
+        color: brown;
+        background-color: sandybrown;
+        transition: 250ms ease-in-out;
+        cursor: pointer;
+    }
+    #div5, .div6{
+        background-color: cadetblue;
+    }
+    .div6 {
+        color:chartreuse
+    }
+    .color {
+        color: purple;
+    }
+    .border {
+        border: 1px solid currentColor;
+    }
+    p:first-line{
+        color: slateblue;
+    }
+
+</style>
+<body>
+    <div>1 Div Styling pakai internal CSS</div>
+    <br>
+    <div>2 Div Styling pakai internal CSS</div>
+    <br>
+    <div>3 Div Styling pakai internal CSS</div>
+    <br>
+
+    <!-- Inline Style CSS -->
+    <div style="background-color: burlywood; color : black;">4 Div pakai Inline</div>
+    <br>
+    <div class="eksternal">Div pakai eksternal CSS</div>
+    <br>
+    <p>Ini pakai P</p>
+    <h3>Ini pakai H3 lho</h3>
+    <br>
+    <div id="div5">Ini div5 pakai id #div5</div>
+    <br>
+    <div class="div6 color border">div6 pakai class</div>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ab molestiae impedit consequatur nostrum qui dolorum itaque corporis vero perferendis. Quis delectus nihil, laboriosam accusamus necessitatibus debitis molestias quo dolore!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae odio ratione quis, iste rem ipsam ducimus eveniet quia placeat a molestiae perspiciatis. Porro voluptatibus deleniti totam aspernatur fuga magni veritatis!</p>
+
+</body>
+</html>
