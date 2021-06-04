@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+</head>
+<style>
+    /*
+    em : ukuran by parentnya, span (separo dari parent nya => div)
+    em : relative elementnya dia (div)
+    rem : relative pada root element, root dsini html
+    vw (viewWidth) : berapa %nya viewWidth dri lebar layar
+    vh (viewHeight) : berapa persen dari tinggi layar
+    % : persent, brp persen dari parent nya
+    */
+    html {
+        font-size: 20px;
+    }
+
+    div {
+        font-size: 30px;
+    }
+    span {
+        font-size: 2em;
+    }
+    .vw {
+        border: 1px solid salmon;
+        width: 50vw;
+    }
+    .vh {
+        border: 1px solid salmon;
+        height: 50vh;
+    }
+    .parent {
+        width: 200px;
+        height: 200px;
+        border: 1px solid salmon;
+        background-color: springgreen;
+    }
+    .persen {
+        background-color: skyblue;
+        height: 50%; /* 50% dari 200px, dri parent nya*/
+    }
+</style>
+<body>
+    <div class="vh">contoh viewHeight</div>
+    <p style="font-size: 10px;">Ini ukuran pixel 10px 1,96 inc</p>
+    <p style="font-size: 20px;">Ini pakai 20px</p>
+    <div>ini kalimat div 30px <span>pakai span</span>
+    </div>
+    <p id="rem" style="font-size: 2rem">Ini kalimat pakai rem, 2xhtml krn 2rem (20px html)</p>
+    <div class="vw">1 - width : 50vw = 50% dari vw nya</div>
+    <br>
+    <div class="parent">
+        <div class="persen">contoh persen</div>
+    </div>
+ <!-- ini cb w3scholl-->
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
